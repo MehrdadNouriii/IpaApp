@@ -11,76 +11,134 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   </head>
   <body>
-    <div class="container" id="container">
-      <div class="form-container sign-up-container">
-        <form action="#">
-          <h1>Create Account</h1>
-          <div class="social-container">
-            <a href="#" class="social"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M16 8.0486C16 3.60314 12.418 -0.000610352 7.99949 -0.000610352C3.58095 -0.000610352 -0.000976562 3.60314 -0.000976562 8.0486C-0.000976562 12.0662 2.92468 15.3962 6.74942 16V10.3753H4.71805V8.0486H6.74942V6.27526C6.74942 4.25792 7.94383 3.14361 9.77132 3.14361C10.6466 3.14361 11.5622 3.30082 11.5622 3.30082V5.28168H10.5534C9.55951 5.28168 9.24957 5.90215 9.24957 6.53869V8.0486H11.4684L11.1137 10.3753H9.24957V16C13.0743 15.3962 16 12.0662 16 8.0486Z" fill="black"/>
-            </svg></a>
-            <a href="#" class="social"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M15.5453 6.55847C15.6394 7.09345 15.6835 7.64019 15.6835 8.18399C15.6835 10.6179 14.8134 12.6755 13.2996 14.0688H13.3025C11.9768 15.2916 10.1573 16 7.99973 16C4.97503 16 2.209 14.2951 0.850974 11.5938C-0.283656 9.33331 -0.283659 6.67017 0.850972 4.40972C2.209 1.70542 4.97503 0.000539093 7.99973 0.000539093C9.98681 -0.0229766 11.9063 0.723645 13.3525 2.08167L11.0685 4.36563C10.2425 3.57786 9.14024 3.1487 7.99973 3.16633C5.91272 3.16633 4.14022 4.57433 3.50824 6.47028C3.17314 7.46382 3.17314 8.53966 3.50824 9.5332H3.51118C4.1461 11.4262 5.91566 12.8342 8.00267 12.8342C9.08145 12.8342 10.0074 12.5579 10.7246 12.0699H10.7217C11.5653 11.5115 12.1414 10.6326 12.3207 9.63902H7.99973V6.55847H15.5453Z" fill="black"/>
-            </svg></a>
-            <a href="#" class="social"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M0 1.14614C0 0.513313 0.526012 0 1.17491 0H14.8251C15.474 0 16 0.513315 16 1.14614V14.8539C16 15.4869 15.474 16 14.8251 16L1.17491 16C0.526012 16 0 15.4869 0 14.8539V1.14614ZM4.94338 13.3937V6.16876H2.54196V13.3937H4.94338ZM3.74266 5.18232C4.58008 5.18232 5.10131 4.62753 5.10131 3.9342C5.0857 3.22527 4.58008 2.68587 3.75854 2.68587C2.93709 2.68587 2.4 3.22527 2.4 3.9342C2.4 4.62753 2.92112 5.18232 3.72701 5.18232H3.74266ZM8.6514 13.3937V9.35897C8.6514 9.14304 8.667 8.92732 8.73042 8.77296C8.90401 8.34153 9.29915 7.89471 9.96255 7.89471C10.8315 7.89471 11.1791 8.55725 11.1791 9.52851V13.3937H13.5803V9.251C13.5803 7.03184 12.3956 5.99922 10.8156 5.99922C9.54177 5.99922 8.9706 6.69937 8.65146 7.19167V7.21656H8.63543C8.6407 7.20832 8.64605 7.20003 8.65146 7.19167V6.16876H6.25007C6.28158 6.8467 6.25007 13.3937 6.25007 13.3937H8.6514Z" fill="black"/>
-            </svg></a>
-          </div>
-          <span>or use your email for registration</span>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="password" />
-          <button>Sign Up</button>
-        </form>
-      </div>
-      <div class="form-container sign-in-container">
-        <form action="#">
-          <h1>Sign in</h1>
-          <div class="social-container">
-            <a href="#" class="social"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M16 8.0486C16 3.60314 12.418 -0.000610352 7.99949 -0.000610352C3.58095 -0.000610352 -0.000976562 3.60314 -0.000976562 8.0486C-0.000976562 12.0662 2.92468 15.3962 6.74942 16V10.3753H4.71805V8.0486H6.74942V6.27526C6.74942 4.25792 7.94383 3.14361 9.77132 3.14361C10.6466 3.14361 11.5622 3.30082 11.5622 3.30082V5.28168H10.5534C9.55951 5.28168 9.24957 5.90215 9.24957 6.53869V8.0486H11.4684L11.1137 10.3753H9.24957V16C13.0743 15.3962 16 12.0662 16 8.0486Z" fill="black"/>
-            </svg></a>
-            <a href="#" class="social"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M15.5453 6.55847C15.6394 7.09345 15.6835 7.64019 15.6835 8.18399C15.6835 10.6179 14.8134 12.6755 13.2996 14.0688H13.3025C11.9768 15.2916 10.1573 16 7.99973 16C4.97503 16 2.209 14.2951 0.850974 11.5938C-0.283656 9.33331 -0.283659 6.67017 0.850972 4.40972C2.209 1.70542 4.97503 0.000539093 7.99973 0.000539093C9.98681 -0.0229766 11.9063 0.723645 13.3525 2.08167L11.0685 4.36563C10.2425 3.57786 9.14024 3.1487 7.99973 3.16633C5.91272 3.16633 4.14022 4.57433 3.50824 6.47028C3.17314 7.46382 3.17314 8.53966 3.50824 9.5332H3.51118C4.1461 11.4262 5.91566 12.8342 8.00267 12.8342C9.08145 12.8342 10.0074 12.5579 10.7246 12.0699H10.7217C11.5653 11.5115 12.1414 10.6326 12.3207 9.63902H7.99973V6.55847H15.5453Z" fill="black"/>
-            </svg></a>
-            <a href="#" class="social"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-linkedin"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                /></svg></a>
-          </div>
-          <span>or use your Account</span>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="password" />
-          <a href="#">Forgot your password?</a>
-          <button>Sign In</button>
-        </form>
-      </div>
-      <div class="overlay-container">
-        <div class="overlay">
-          <div class="overlay-panel overlay-left">
-            <h1>Welcome Back!</h1>
-            <p>
-              To keep connected with us please login with your personal info
-            </p>
-            <button class="ghost" id="signIn">Sign In</button>
-          </div>
-          <div class="overlay-panel overlay-right">
-            <h1>Hello Friend</h1>
-            <p>Enter your personal details and start journey with Us</p>
-            <button class="ghost" id="signUp">Sign Up</button>
+    <div id="container" class="container container-fluid">
+      <!-- FORM SECTION -->
+      <div class="row">
+        <!-- SIGN UP -->
+        <div class="col-6 chart sign-up d-flex text-center">
+          <div class="form-wrapper chart">
+            <div class="form sign-up">
+               
+              <div class="input-group">
+                
+                <i class="bi bi-people-fill"></i>
+                <input type="text" placeholder="Username" />
+              </div>
+              <div class="input-group">
+                <i class="bi bi-envelope-at-fill"></i>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div class="input-group">
+                <i class="bi bi-lock-fill"></i>
+                <input type="password" placeholder="Password" />
+              </div>
+              <div class="input-group">
+                <i class="bi bi-lock-fill"></i>
+                <input type="password" placeholder="Confirm password" />
+              </div>
+              <button class="sign-btn">Sign up</button>
+              <p>
+                <span> Already have an account? </span>
+                <a href="#" class="form-sign" onclick="toggle()" class="pointer"> Sign In</a>
+              </p>
+            </div>
           </div>
         </div>
+        <!-- END SIGN UP -->
+        <!-- SIGN IN -->
+        <div class="col-6 chart flex-column  sign-in">
+          <div class="form-wrapper align-items-center">
+            <div class="form sign-in">
+                
+              <div class="input-group">
+                <i class="bi bi-people-fill"></i>
+                <input type="text" placeholder="Username" />
+              </div>
+              <div class="input-group">
+                <i class="bi bi-lock-fill"></i>
+                <input type="password" placeholder="Password" />
+              </div>
+              <button class="sign-btn">Sign in</button>
+              <p>
+                <a class="form-sign"href="#forgotpass"> Forgot password? </a>
+              </p>
+              <p>
+                <span> Don't have an account? </span>
+                <a class="form-sign"onclick="toggle()" class="pointer"> Sign Up</a>
+              </p>
+              <div class="d-flex flex-column ">
+                <button class="my-3 fw-bold align-items-center justify-content-center py-1 social-sign"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none">
+                    <g style="mix-blend-mode:hard-light">
+                      <g filter="url(#filter0_d_1287_5414)">
+                        <path d="M19.5453 6.55847C19.6394 7.09345 19.6835 7.64019 19.6835 8.18399C19.6835 10.6179 18.8134 12.6755 17.2996 14.0688H17.3025C15.9768 15.2916 14.1573 16 11.9997 16C8.97503 16 6.209 14.2951 4.85097 11.5938C3.71634 9.33331 3.71634 6.67017 4.85097 4.40972C6.209 1.70542 8.97503 0.000539093 11.9997 0.000539093C13.9868 -0.0229766 15.9063 0.723645 17.3525 2.08167L15.0685 4.36563C14.2425 3.57786 13.1402 3.1487 11.9997 3.16633C9.91272 3.16633 8.14022 4.57433 7.50824 6.47028C7.17314 7.46382 7.17314 8.53966 7.50824 9.5332H7.51118C8.1461 11.4262 9.91566 12.8342 12.0027 12.8342C13.0815 12.8342 14.0074 12.5579 14.7246 12.0699H14.7217C15.5653 11.5115 16.1414 10.6326 16.3207 9.63902H11.9997V6.55847H19.5453Z" fill="#DF2222"/>
+                        <path d="M19.5453 6.55847C19.6394 7.09345 19.6835 7.64019 19.6835 8.18399C19.6835 10.6179 18.8134 12.6755 17.2996 14.0688H17.3025C15.9768 15.2916 14.1573 16 11.9997 16C8.97503 16 6.209 14.2951 4.85097 11.5938C3.71634 9.33331 3.71634 6.67017 4.85097 4.40972C6.209 1.70542 8.97503 0.000539093 11.9997 0.000539093C13.9868 -0.0229766 15.9063 0.723645 17.3525 2.08167L15.0685 4.36563C14.2425 3.57786 13.1402 3.1487 11.9997 3.16633C9.91272 3.16633 8.14022 4.57433 7.50824 6.47028C7.17314 7.46382 7.17314 8.53966 7.50824 9.5332H7.51118C8.1461 11.4262 9.91566 12.8342 12.0027 12.8342C13.0815 12.8342 14.0074 12.5579 14.7246 12.0699H14.7217C15.5653 11.5115 16.1414 10.6326 16.3207 9.63902H11.9997V6.55847H19.5453Z" fill="url(#paint0_linear_1287_5414)"/>
+                      </g>
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_1287_5414" x="0" y="0" width="23.6835" height="24" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1287_5414"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1287_5414" result="shape"/>
+                      </filter>
+                      <linearGradient id="paint0_linear_1287_5414" x1="11.8417" y1="0" x2="11.8417" y2="16" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.259375" stop-color="#2F2FA2"/>
+                        <stop offset="0.717708" stop-color="#FF0000"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>Sign in with Google</button>
+                <button class="fw-bold align-items-center justify-content-center py-1 "><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none">
+                    <g style="mix-blend-mode:hard-light" filter="url(#filter0_d_1287_5407)">
+                      <path d="M20 8.0486C20 3.60314 16.418 -0.000610352 11.9995 -0.000610352C7.58095 -0.000610352 3.99902 3.60314 3.99902 8.0486C3.99902 12.0662 6.92468 15.3962 10.7494 16V10.3753H8.71805V8.0486H10.7494V6.27526C10.7494 4.25792 11.9438 3.14361 13.7713 3.14361C14.6466 3.14361 15.5622 3.30082 15.5622 3.30082V5.28168H14.5534C13.5595 5.28168 13.2496 5.90215 13.2496 6.53869V8.0486H15.4684L15.1137 10.3753H13.2496V16C17.0743 15.3962 20 12.0662 20 8.0486Z" fill="#2109B7"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_1287_5407" x="-0.000976562" y="-0.000610352" width="24.0009" height="24.0006" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1287_5407"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1287_5407" result="shape"/>
+                      </filter>
+                    </defs>
+                  </svg>Sign in with Facebook</button>
+              </div>
+            </div>
+          </div>
+          <div class="form-wrapper"></div>
+        </div>
+        <!-- END SIGN IN -->
       </div>
+      <!-- END FORM SECTION -->
+      <!-- CONTENT SECTION -->
+      <div class="row content-row">
+        <!-- SIGN IN CONTENT -->
+        <div class="col-6 align-items-center chart flex-column ">
+          <div class="text sign-in">
+            <h2>Welcome</h2>
+          </div>
+          <div class="img sign-in"></div>
+        </div>
+        <!-- END SIGN IN CONTENT -->
+        <!-- SIGN UP CONTENT -->
+        <div class="col-6 chart flex-column ">
+          <div class="img sign-up"></div>
+          <div class="text sign-up chart">
+            <h2>Join with us</h2>
+          </div>
+        </div>
+        <!-- END SIGN UP CONTENT -->
+      </div>
+      <!-- END CONTENT SECTION -->
     </div>
 
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"></script>
