@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="../style/cards.css">
 </head>
 <body>
+ 
+    <div class="glow">
+      <svg width="10" height="10">
+          <filter id="f" x="-50%" y="-200%" width="200%" height="500%">
+            <feGaussianBlur stdDeviation="35"></feGaussianBlur>
+            <feColorMatrix type="saturate" values="1.3"></feColorMatrix>
+            <feComposite in="SourceGraphic"></feComposite>
+          </filter>
+          
+        </svg>
+        <h1 class="glow-text">IPAAPP</h1>
+      </div>
+        
+  
     <main class="main flow">
         <h1 class="main__heading">اشتراک ها</h1>
         <div class="main__cards cards">

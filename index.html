@@ -2,141 +2,286 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/main-page.css" />
-    <link rel="p0reconnect" href="https://fonts.google.com/" />
-    <title>ipaApp</title>
+    <title>Navbar 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link href="./style/main-page.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="background">
-      <nav class="menu-wrapper">
-        <div class="menu-bar">
-          <a href="#" title="ipaApp" class="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
-                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
-                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
-                
-            </svg>
-            ipaApp
-          </a>
-          <ul class="navigation hide">
-            <li>
-              <button>
-                Categories
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-              </button>
-              <div class="dropdown">
-                <ul class="list-items-with-description">
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-transparency" viewBox="0 0 16 16">
-                        <path d="M0 6.5a6.5 6.5 0 0 1 12.346-2.846 6.5 6.5 0 1 1-8.691 8.691A6.5 6.5 0 0 1 0 6.5Zm5.144 6.358a5.5 5.5 0 1 0 7.714-7.714 6.5 6.5 0 0 1-7.714 7.714Zm-.733-1.269c.363.15.746.261 1.144.33l-1.474-1.474c.069.398.18.78.33 1.144Zm2.614.386a5.47 5.47 0 0 0 1.173-.242L4.374 7.91a5.958 5.958 0 0 0-.296 1.118l2.947 2.947Zm2.157-.672c.297-.166.577-.36.838-.576L5.418 6.126a6.016 6.016 0 0 0-.587.826l4.35 4.351Zm1.545-1.284c.216-.26.41-.54.576-.837L6.953 4.83a5.97 5.97 0 0 0-.827.587l4.6 4.602Zm1.006-1.822c.121-.374.204-.766.242-1.172L9.028 4.078c-.386.063-.76.163-1.118.296l3.823 3.824Zm.186-2.642a5.463 5.463 0 0 0-.33-1.144 5.46 5.46 0 0 0-1.144-.33l1.474 1.474Z"/>
-                      </svg>
-                    <div class="item-title">
-                      <h3>Photograph</h3>
-                      <p>Edit Photo's and Video's</p>
-                    </div>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-controller" viewBox="0 0 16 16">
-                        <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z"/>
-                        <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"/>
-                      </svg>
-                    <div class="item-title">
-                      <h3>Games</h3>
-                      <p>Strategy,Shooter,Puzzle</p>
-                    </div>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-app-indicator" viewBox="0 0 16 16">
-                        <path d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"/>
-                        <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                      </svg>
-                    <div class="item-title">
-                      <h3>Apps</h3>
-                      <p>Recommended apps</p>
-                    </div>
-                  </li>
-                  <!-- more item -->
-                </ul>
-              </div>
-            </li>
-            <li>
-              <button>
-                Sulotion
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-chevron-down"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                  />
-                </svg>
-              </button>
-              <div class="dropdown">
-                <h3>For</h3>
-                <ul class="list-menu-items">
-                  <li>
-                    <a href="#enterprise" title="Enterprise"> Enterprise </a>
-                  </li>
-                  <!-- more item -->
-                </ul>
-              </div>
-            </li>
-            <li>
-              <button>
-                Open Source
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-chevron-down"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                  />
-                </svg>
-              </button>
-              <div class="dropdown">
-                <h3>Repositories</h3>
-                <ul class="list-menu-items">
-                  <li>
-                    <a href="#topics" title="Topics"> Topics </a>
-                  </li>
-                  <!-- more items -->
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="action-buttons">
-          <a href="#sigupForFree" title="signUp" class="primary">SignUp</a>
-        </div>
-        <button class="burger-menu">
+    <header class=" container-fluid   d-flex">
+      <button onclick="toggleMenu()" class="burger"></button>
+      <div class=" container   d-flex  items">
+        <button class="button d-flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
+            width="32"
+            height="32"
             fill="currentColor"
-            class="bi bi-list"
+            class="bi bi-apple"
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              d="M11.182.008C11.148-.03 
+          9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 
+          2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 
+          11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 
+          1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 
+          0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"
             />
-          </svg>
+            <path
+              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"
+            /></svg>IpaApp
         </button>
-      </nav>
+        <div class="dropdowns d-flex">
+          <div class="dropdown">
+            <button class="button">
+              Services
+              <img src="Assets/chevron.svg" />
+            </button>
+            <div class="dropdown-menu">
+              <button>UX/UI Design</button>
+              <button>Web Applications</button>
+              <button>SEO Advice</button>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="button">
+              Store
+              <img src="Assets/chevron.svg" />
+            </button>
+            <div class="dropdown-menu">
+              <button>Photograph</button>
+              <button>App</button>
+              <button>Games</button>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="button">
+              Support
+              <img src="Assets/chevron.svg" />
+            </button>
+            <div class="dropdown-menu">
+              <button>Live Chat</button>
+              <button>Send Email</button>
+              <button>Request Help</button>
+            </div>
+          </div>
+          <button class="button ">AboutUs</button>
+        </div>
+        <div class="search justify-content-start">
+          <input type="text" placeholder="Search" class="navbar-search" />
+        </div>
+        <div class="action-buttons justify-content-end  ">
+          <a href="pages/login.html" title="signUp" class="signup button"
+            >SignUp</a
+          >
+          <div class="dark-mode">
+            <label class="switch">
+              <input type="checkbox" id="darkbtn" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+                                                                    <!-- Intro -->
+<section class="container-fluid  introduction my-5 mx-4 ">
+  <div class="container d-flex ">
+      <div class="row col-6 registery text-start fs-4 d-flex ">
+        <p class="position-relative">You can regisery for <button type="button" href="./pages/cards.html" class="btn btn-outline-info text-decoration-underline text-decoration-line-none premium">PREMIUM</button> 
+          <br>
+            <span class="fw-bold">IPA Library - Download iOS Jailbreak, Tweaks, and Apps</span> <br>
+            <span class="text-muted"> Download and install your favorite IOS jailbreak and tweaks from the most trusted
+                source</span>
+        </p>
+        <div class="app m-3 align-items-center justify-content-center ">
+          <div class="d-grid gap-2 d-md-block align-items-center justify-content-center">
+            <button type="button" class="btn btn-outline-success ms-0 fw-bold ">Download app</button>
+          </div>
+        </div>
+      </div>
+      <div class="intro-img row col-6 d-flex ">
+        <img src="Assets/rNS9xSbf5R9zWzpT1y1ZPaSJXRvR_aghvm2T5zM9WPk.jpg" alt="">
+      </div>
     </div>
+  </section>
+
+
+
+
+
+                                                                         <!-- News&Updates -->
+<section class="container-fluid news-updates">
+                                                                           <!-- Social -->
+  <div class="container-fluid p-0 social-icons ">
+      <div class="row col-1 d-flex  list-unstyled">
+    <ul class="social-media-buttons d-flex flex-column justify-content-center align-items-center  gap-2  list-unstyled">
+      <li>
+        <a href="#instagram" title="instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+            <g filter="url(#filter0_d_1287_5408)">
+              <path d="M16.5012 0C13.1063 0 12.6803 0.0148441 11.347 0.0755219C10.0162 0.13646 9.10787 0.347139 8.31307 0.656257C7.49092 0.975531 6.79352 1.40262 6.09872 2.09768C5.4034 2.79248 4.97631 3.48988 4.656 4.31176C4.3461 5.10682 4.13516 6.01543 4.07526 7.34565C4.01563 8.679 4 9.1053 4 12.5001C4 15.895 4.0151 16.3197 4.07552 17.653C4.13672 18.9838 4.3474 19.8921 4.65626 20.6869C4.97579 21.5091 5.40288 22.2065 6.09794 22.9013C6.79248 23.5966 7.48988 24.0247 8.3115 24.344C9.10682 24.6531 10.0154 24.8638 11.3459 24.9247C12.6793 24.9854 13.105 25.0003 16.4996 25.0003C19.8947 25.0003 20.3194 24.9854 21.6528 24.9247C22.9835 24.8638 23.8929 24.6531 24.6882 24.344C25.5101 24.0247 26.2065 23.5966 26.901 22.9013C27.5963 22.2065 28.0234 21.5091 28.3437 20.6872C28.651 19.8921 28.862 18.9835 28.9245 17.6533C28.9844 16.32 29 15.895 29 12.5001C29 9.1053 28.9844 8.67926 28.9245 7.34591C28.862 6.01517 28.651 5.10682 28.3437 4.31202C28.0234 3.48988 27.5963 2.79248 26.901 2.09768C26.2057 1.40236 25.5104 0.975271 24.6875 0.656257C23.8906 0.347139 22.9817 0.13646 21.651 0.0755219C20.3176 0.0148441 19.8931 0 16.4973 0H16.5012ZM15.3798 2.25263C15.7126 2.25211 16.084 2.25263 16.5012 2.25263C19.8387 2.25263 20.2343 2.26461 21.5523 2.3245C22.771 2.38023 23.4325 2.58388 23.8731 2.75498C24.4565 2.98154 24.8724 3.25238 25.3096 3.68988C25.7471 4.12739 26.0179 4.54406 26.245 5.1274C26.4161 5.56751 26.62 6.22897 26.6755 7.44773C26.7354 8.76546 26.7484 9.16129 26.7484 12.4973C26.7484 15.8332 26.7354 16.2291 26.6755 17.5468C26.6198 18.7656 26.4161 19.427 26.245 19.8671C26.0185 20.4505 25.7471 20.8658 25.3096 21.3031C24.8721 21.7406 24.4567 22.0114 23.8731 22.238C23.433 22.4099 22.771 22.613 21.5523 22.6687C20.2345 22.7286 19.8387 22.7416 16.5012 22.7416C13.1634 22.7416 12.7678 22.7286 11.4501 22.6687C10.2313 22.6125 9.56985 22.4088 9.12896 22.2377C8.54562 22.0112 8.12895 21.7403 7.69144 21.3028C7.25394 20.8653 6.9831 20.4497 6.75602 19.8661C6.58492 19.426 6.38101 18.7645 6.32555 17.5458C6.26565 16.228 6.25367 15.8322 6.25367 12.4941C6.25367 9.15608 6.26565 8.76233 6.32555 7.44461C6.38127 6.22585 6.58492 5.56438 6.75602 5.12375C6.98258 4.54041 7.25394 4.12374 7.69144 3.68624C8.12895 3.24873 8.54562 2.9779 9.12896 2.75081C9.56959 2.57893 10.2313 2.37581 11.4501 2.31982C12.6032 2.26773 13.0501 2.25211 15.3798 2.2495V2.25263ZM23.1736 4.32817C22.3455 4.32817 21.6736 4.99927 21.6736 5.82766C21.6736 6.6558 22.3455 7.32768 23.1736 7.32768C24.0018 7.32768 24.6737 6.6558 24.6737 5.82766C24.6737 4.99953 24.0018 4.32765 23.1736 4.32765V4.32817ZM16.5012 6.08079C12.9561 6.08079 10.0818 8.95504 10.0818 12.5001C10.0818 16.0452 12.9561 18.9182 16.5012 18.9182C20.0463 18.9182 22.9195 16.0452 22.9195 12.5001C22.9195 8.95504 20.046 6.08079 16.5009 6.08079H16.5012ZM16.5012 8.33342C18.8022 8.33342 20.6679 10.1988 20.6679 12.5001C20.6679 14.8012 18.8022 16.6668 16.5012 16.6668C14.1998 16.6668 12.3345 14.8012 12.3345 12.5001C12.3345 10.1988 14.1998 8.33342 16.5012 8.33342V8.33342Z" fill="black"/>
+            </g>
+            <defs>
+              <filter id="filter0_d_1287_5408" x="0" y="0" width="33" height="33.0002" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1287_5408"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1287_5408" result="shape"/>
+              </filter>
+            </defs>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#facebook" title="facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 25 25" fill="none">
+            <path d="M24.9999 12.5759C24.9999 5.62988 19.4032 -0.000976562 12.4992 -0.000976562C5.59524 -0.000976562 -0.00152588 5.62988 -0.00152588 12.5759C-0.00152588 18.8534 4.56981 24.0565 10.546 25V16.2114H7.37195V12.5759H10.546V9.80506C10.546 6.65298 12.4122 4.91187 15.2677 4.91187C16.6354 4.91187 18.0659 5.15751 18.0659 5.15751V8.2526H16.4896C14.9367 8.2526 14.4524 9.22208 14.4524 10.2167V12.5759H17.9194L17.3652 16.2114H14.4524V25C20.4286 24.0565 24.9999 18.8534 24.9999 12.5759Z" fill="black"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#linkedIn" title="linkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+            <path d="M0 1.79084C0 0.802052 0.821894 0 1.8358 0H23.1642C24.1781 0 25 0.802055 25 1.79084V23.2092C25 24.1983 24.1781 25 23.1642 25L1.8358 25C0.821894 25 0 24.1983 0 23.2092V1.79084ZM7.72403 20.9276V9.63869H3.97181V20.9276H7.72403ZM5.8479 8.09738C7.15638 8.09738 7.9708 7.23052 7.9708 6.14719C7.94641 5.03948 7.15638 4.19667 5.87273 4.19667C4.5892 4.19667 3.75 5.03948 3.75 6.14719C3.75 7.23052 4.56424 8.09738 5.82345 8.09738H5.8479ZM13.5178 20.9276V14.6234C13.5178 14.286 13.5422 13.9489 13.6413 13.7078C13.9125 13.0336 14.5299 12.3355 15.5665 12.3355C16.9242 12.3355 17.4674 13.3707 17.4674 14.8883V20.9276H21.2192V14.4547C21.2192 10.9872 19.3681 9.37379 16.8994 9.37379C14.909 9.37379 14.0166 10.4678 13.5179 11.237V11.2759H13.4929C13.5011 11.263 13.5094 11.25 13.5179 11.237V9.63869H9.76573C9.81497 10.698 9.76573 20.9276 9.76573 20.9276H13.5178Z" fill="black"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#github" title="github">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+            <path d="M12.5 0C5.59375 0 0 5.59375 0 12.5C0 18.0312 3.57812 22.7031 8.54687 24.3594C9.17187 24.4688 9.40625 24.0938 9.40625 23.7656C9.40625 23.4688 9.39063 22.4844 9.39063 21.4375C6.25 22.0156 5.4375 20.6719 5.1875 19.9687C5.04687 19.6094 4.4375 18.5 3.90625 18.2031C3.46875 17.9687 2.84375 17.3906 3.89063 17.375C4.875 17.3594 5.57813 18.2812 5.8125 18.6562C6.9375 20.5469 8.73438 20.0156 9.45313 19.6875C9.5625 18.875 9.89062 18.3281 10.25 18.0156C7.46875 17.7031 4.5625 16.625 4.5625 11.8437C4.5625 10.4844 5.04688 9.35937 5.84375 8.48437C5.71875 8.17187 5.28125 6.89062 5.96875 5.17187C5.96875 5.17187 7.01563 4.84375 9.40625 6.45313C10.4062 6.17188 11.4688 6.03125 12.5313 6.03125C13.5938 6.03125 14.6563 6.17188 15.6563 6.45313C18.0469 4.82813 19.0938 5.17187 19.0938 5.17187C19.7813 6.89062 19.3438 8.17187 19.2188 8.48437C20.0156 9.35937 20.5 10.4687 20.5 11.8437C20.5 16.6406 17.5781 17.7031 14.7969 18.0156C15.25 18.4062 15.6406 19.1563 15.6406 20.3281C15.6406 22 15.625 23.3438 15.625 23.7656C15.625 24.0938 15.8594 24.4844 16.4844 24.3594C18.9659 23.5217 21.1221 21.9268 22.6497 19.7994C24.1773 17.672 24.9993 15.1191 25 12.5C25 5.59375 19.4063 0 12.5 0Z" fill="black"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#twitter" title="twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20" fill="none">
+            <path d="M7.85314 20C17.2869 20 22.449 12.3031 22.449 5.63976C22.449 5.42323 22.449 5.20669 22.439 4.99016C23.4394 4.2815 24.3097 3.38583 25 2.37205C24.0796 2.77559 23.0892 3.04134 22.0488 3.16929C23.1092 2.54921 23.9196 1.55512 24.3097 0.374015C23.3193 0.954724 22.2189 1.36811 21.0484 1.59449C20.108 0.610236 18.7775 0 17.3069 0C14.4758 0 12.1749 2.26378 12.1749 5.04921C12.1749 5.44291 12.2249 5.82677 12.3049 6.20079C8.04322 5.99409 4.26171 3.97638 1.73069 0.925197C1.29052 1.67323 1.04042 2.53937 1.04042 3.46457C1.04042 5.21654 1.95078 6.76181 3.32133 7.66732C2.48099 7.6378 1.69068 7.41142 1.0004 7.0374C1.0004 7.05709 1.0004 7.07677 1.0004 7.1063C1.0004 9.54724 2.77111 11.5945 5.11204 12.0571C4.68187 12.1752 4.23169 12.2343 3.7615 12.2343C3.43137 12.2343 3.11124 12.2047 2.80112 12.1457C3.45138 14.1535 5.35214 15.6102 7.59304 15.6496C5.83233 17.0079 3.62145 17.815 1.22049 17.815C0.810325 17.815 0.40016 17.7953 0 17.7461C2.2609 19.1634 4.96199 20 7.85314 20Z" fill="black"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+      </div>
+
+                                                                 <!-- IMG crousele -->
+      <div class="row col-8 updates">
+       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <h1 class="text-decoration-underline ">New Updates</h1>
+          <div class="carousel-inner top-0 ">
+            <div class="carousel-item active">
+              <img src="Assets/1938173.jpg" class="d-block w-100" alt="...">
+              <div class="text-bg-danger text-center py-2 updates-title">
+                <h5>Hi</h5>
+                <p>How are you?</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Assets/fed81eb49364bafeede975352b18e1b7.jpg" class="d-block w-100" alt="...">
+              <div class="text-bg-danger text-center py-2 updates-title">
+                <h5>Hi</h5>
+                <p>How are you?</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Assets/fed81eb49364bafeede975352b18e1b7.jpg" class="d-block w-100" alt="...">
+              <div class="text-bg-danger text-center py-2 updates-title">
+                <h5>Hi</h5>
+                <p>How are you?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+                                                                 <!-- NEws -->
+      <div class="row col-3 news">
+       <div class="fs-5 ">
+        <h1 class="text-decoration-underline d-flex ">News</h1>
+        <ul class="list-unstyled ">
+          <li class="py-3">
+            <img src="Assets/1938173.jpg" alt="" width="30" height="30" class="mx-1">
+            <span >Call of Dutty:Mobile Season 8
+            </span>
+          </li>
+          <hr>
+          <li class=" py-3">
+            <img src="Assets/1938173.jpg" alt="" width="30" height="30"class="mx-1">
+            <span>Call of Dutty:Mobile Season 8
+            </span>
+          </li>
+          <hr>
+          <li class=" py-3">
+            <img src="Assets/1938173.jpg" alt="" width="30" height="30"class="mx-1">
+            <span>Call of Dutty:Mobile Season 8
+            </span>
+          </li>
+          <hr>
+          <li class=" py-3">
+            <img src="Assets/1938173.jpg" alt="" width="30" height="30"class="mx-1">
+            <span>Call of Dutty:Mobile Season 8
+            </span>
+          </li>
+          <hr>
+          <li class=" py-3">
+            <img src="Assets/1938173.jpg" alt="" width="30" height="30"class="mx-1">
+            <span>Call of Dutty:Mobile Season 8
+            </span>
+          </li>
+          <hr>
+          <li class=" py-3">
+            <img src="Assets/1938173.jpg" alt="" width="30" height="30"class="mx-1">
+            <span>Call of Dutty:Mobile Season 8
+            </span>
+          </li>
+          <hr>
+          <li class=" py-3">
+            <img src="Assets/1938173.jpg" alt="" width="30" height="30"class="mx-1">
+            <span>Call of Dutty:Mobile Season 8
+            </span>
+          </li>
+        </ul>
+       </div>
+        
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+    <script>
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+    <script src="Js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

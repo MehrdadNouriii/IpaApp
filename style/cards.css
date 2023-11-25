@@ -90,9 +90,13 @@ ul {
 
 .card__bullets li::before {
   display: inline-block;
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='16' title='check' fill='%23dddddd'%3E%3Cpath d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z' /%3E%3C/svg%3E");
+  content: url("data:./image/svg+xml,%3Csvgxmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='16' title='check' fill='%23dddddd'%3E%3Cpath d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z' /%3E%3C/svg%3E");
   transform: translatey(0.25ch);
   margin-right: 1ch;
+  -webkit-transform: translatey(0.25ch);
+  -moz-transform: translatey(0.25ch);
+  -ms-transform: translatey(0.25ch);
+  -o-transform: translatey(0.25ch);
 }
 
 .card__heading {
@@ -121,6 +125,10 @@ ul {
   border-radius: 10px;
   font-size: 1rem;
   font-weight: 600;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .overlay {
@@ -129,18 +137,14 @@ ul {
   pointer-events: none;
   user-select: none;
   opacity: var(--opacity, 0);
-  -webkit-mask: radial-gradient(
-    25rem 25rem at var(--x) var(--y),
-    #000 1%,
-    transparent 50%
-  );
-  mask: radial-gradient(
-    25rem 25rem at var(--x) var(--y),
-    #000 1%,
-    transparent 50%
-  );
+  -webkit-mask: radial-gradient(    25rem 25rem at var(--x) var(--y),    #000 1%,    transparent 50%  );
+  mask: radial-gradient(    25rem 25rem at var(--x) var(--y),    #000 1%,    transparent 50%  );
   transition: 400ms mask ease;
   will-change: mask;
+  -webkit-transition: 400ms mask ease;
+  -moz-transition: 400ms mask ease;
+  -ms-transition: 400ms mask ease;
+  -o-transition: 400ms mask ease;
 }
 
 .overlay .card {
@@ -160,6 +164,10 @@ ul {
 :not(.overlay) > .card {
   transition: 400ms background ease;
   will-change: background;
+  -webkit-transition: 400ms background ease;
+  -moz-transition: 400ms background ease;
+  -ms-transition: 400ms background ease;
+  -o-transition: 400ms background ease;
 }
 
 :not(.overlay) > .card:hover {
@@ -168,55 +176,41 @@ ul {
 }
 
 
-/* -- YouTube Link Styles -- */
-
-#source-link {
-  top: 60px;
+/* IPA text */
+.glow{
+  z-index: -2;
+  opacity: 1;
+  background-size: contain;
+  /* background-color: aliceblue; */
+}
+@property --k {
+  syntax: "<number>";
+  initial-value: 0;
+  inherits: false;
 }
 
-#source-link > i {
-  color: rgb(94, 106, 210);
+svg[height="0"] {
+  position: absolute;
 }
 
-#yt-link {  
-  top: 10px;
+.glow-text {
+  --k: 2;
+  place-self: center;
+  background: linear-gradient(90deg, hsl(calc(var(--k)*1turn), 95%, 65%), hsl(calc(var(--k)*1turn + 90deg), 95%, 65%));
+  background-clip: inherit;
+  color: #000000;
+  font: 900 clamp(.875em, 7.25vw, 5em) arial black, sans-serif;
+  /* filter: url(#f); */
+  text-align: center;
+  text-transform: uppercase;
+  animation: anime 4s linear infinite;
+  font-weight: 900;
+  /* -webkit-filter: url(#f); */
+  -webkit-animation: anime 4s linear infinite;
 }
 
-#yt-link > i {
-  color: rgb(219, 31, 106); 
-
-}
-
-.meta-link {
-  align-items: center;
-  backdrop-filter: blur(3px);
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-  cursor: pointer;  
-  display: inline-flex;
-  gap: 5px;
-  left: 10px;
-  padding: 10px 20px;
-  position: fixed;
-  text-decoration: none;
-  transition: background-color 600ms, border-color 600ms;
-  z-index: 10000;
-}
-
-.meta-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.meta-link > i, .meta-link > span {
-  height: 20px;
-  line-height: 20px;
-}
-
-.meta-link > span {
-  color: white;
-  font-family: "Rubik", sans-serif;
-  transition: color 600ms;
+@keyframes anime {
+  to {
+    --k: 1 ;
+  }
 }
