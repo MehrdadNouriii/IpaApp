@@ -1,9 +1,14 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 :root {
+<<<<<<< HEAD
   --primary-color: #DA0C81;
   --secondary-color: #610C9F;
   --third-color: #E95793;
   --forth-color: #940B92;
+=======
+  --primary-color: #4ea685;
+  --secondary-color: #57b894;
+>>>>>>> b82c88823f347400d857197735bf463687a5fdea
   --black: #000000;
   --white: #ffffff;
   --gray: #efefef;
@@ -26,8 +31,11 @@ body {
     width: 100%;
   height: 100vh;
   overflow: hidden;
+<<<<<<< HEAD
   background-image: linear-gradient(-45deg,var(--third-color) 0%,var(--forth-color) 50%, var(--secondary-color)100%);
 
+=======
+>>>>>>> b82c88823f347400d857197735bf463687a5fdea
 }
 
 .container {
@@ -348,7 +356,11 @@ body {
 
 .container.sign-in::before {
   transform: translate(0, 0);
+<<<<<<< HEAD
   right: 45%;
+=======
+  right: 50%;
+>>>>>>> b82c88823f347400d857197735bf463687a5fdea
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
@@ -471,6 +483,7 @@ body {
     -o-transition: all 0.2;
 }
 .social-sign >svg{
+<<<<<<< HEAD
   padding-top: 0.5rem;
 }
 .social-sign:hover{
@@ -480,3 +493,8 @@ body {
 /* .social-sign::{
   
 } */
+=======
+    color: var(--google-color) !important;
+    /* color: var(--gray); */
+}
+>>>>>>> b82c88823f347400d857197735bf463687a5fdea
