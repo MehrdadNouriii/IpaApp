@@ -1,7 +1,7 @@
 // Dark BTN
 
 
-const darkbtn = document.getElementById('darkbtn');
+const darkbtn = document.getElementsId('darkbtn');
 const body = document.body
 const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
 if (isDarkMode){
@@ -18,6 +18,9 @@ darkbtn.addEventListener('change', () =>{
         localStorage.setItem('darkMode', 'disabled');
     }
 });
-// footer
 
-document.getElementById('year').innerHTML = new Date().getFullYear();
+// Footer
+
+import { Input, initMDB } from "mdb-ui-kit";
+
+initMDB({ Input });
