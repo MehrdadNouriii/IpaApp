@@ -197,7 +197,9 @@ svg[height="0"] {
   --k: 2;
   place-self: center;
   background: linear-gradient(90deg, hsl(calc(var(--k)*1turn), 95%, 65%), hsl(calc(var(--k)*1turn + 90deg), 95%, 65%));
-  background-clip: inherit;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   color: #000000;
   font: 900 clamp(.875em, 7.25vw, 5em) arial black, sans-serif;
   /* filter: url(#f); */
